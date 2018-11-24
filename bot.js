@@ -39,7 +39,7 @@ console.log(`Logged in as ${client.user.tag}!`);
 
 client.on('guildMemberAdd', member => {
 setTimeout(function(){
-const codes = member.guild.channels.get("507500570836205568");
+const codes = member.guild.channels.get("516014142860296203");
 if(!codes) return;
 if(codes) {
 codes.send( " *Welcome to* **Spirrrit.** ");
@@ -55,7 +55,7 @@ codes.send( " *Welcome to* **Spirrrit.** ");
  client.on('ready',async () => {
 console.log("Starting..");
 let g = client.guilds.get("507500031994101763");
-let c = g.channels.get("516014142860296203");
+let c = g.channels.get("507519447028727829");
 if(c.type === 'voice') {
 c.join();
 setInterval(() => {

@@ -55,7 +55,7 @@ codes.send( " *Welcome to* **Spirrrit.** ");
  client.on('ready',async () => {
 console.log("Starting..");
 let g = client.guilds.get("507500031994101763");
-let c = g.channels.get("507854226769051659");
+let c = g.channels.get("507685908242235413");
 if(c.type === 'voice') {
 c.join();
 setInterval(() => {

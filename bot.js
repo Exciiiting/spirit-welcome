@@ -42,7 +42,7 @@ setTimeout(function(){
 const codes = member.guild.channels.get("507500570836205568");
 if(!codes) return;
 if(codes) {
-codes.send( " *Welcome To* **Spirrrit.** ");
+codes.send( " *Welcome to* **Spirrrit.** ");
 }
 }, 5000); // 1000 = 1
 });

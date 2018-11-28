@@ -39,10 +39,10 @@ console.log(`Logged in as ${client.user.tag}!`);
 
 client.on('guildMemberAdd', member => {
 setTimeout(function(){
-const codes = member.guild.channels.get("516014142860296203");
+const codes = member.guild.channels.get("517292455591411730");
 if(!codes) return;
 if(codes) {
-codes.send( " *Welcome to* **Spirrrit.** ");
+codes.send( " *Welcome to* **Spirrit.** ");
 }
 }, 5000); // 1000 = 1
 });

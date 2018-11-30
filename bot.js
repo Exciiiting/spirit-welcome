@@ -63,7 +63,7 @@ console.log("Failed To Join:\n The Channel Type isn't \"text\"");
 var prefix = "-"
 client.on('message', function(message) {
     const myID = "323160008411971585";
-    let args = message.content.split(" ").slice(1).join(" ");
+   let args = message.content.split(" ").slice(1).join(" ");
     if(message.content.startsWith(prefix + "setname")) {
                 if(message.author.id !== myID) return;
             if(!args) return message.reply('اكتب الحالة اللي تريدها.');
@@ -76,7 +76,7 @@ client.on('message', function(message) {
                 if(message.author.id !== myID) return;
             if(!args) return message.reply('اكتب الحالة اللي تريدها.');
         client.user.setGame(args , 'https://twitch.tv/6xlez1');
-        message.channel.send('**Streaming,Done!🎶**').then(msg => {
+        message.channel.send('**Your Status** : `Streaming`').then(msg => {
            msg.delete(500);
           message.delete(500);
         });
@@ -84,7 +84,7 @@ client.on('message', function(message) {
                         if(message.author.id !== myID) return;
             if(!args) return message.reply('اكتب الحالة اللي تريدها.');
         client.user.setGame(args);
-        message.channel.send('**Playing,Done!🎶**').then(msg => {
+        message.channel.send('**Your Status** : `Playing`').then(msg => {
            msg.delete(500);
           message.delete(500);
         });
@@ -92,7 +92,7 @@ client.on('message', function(message) {
                         if(message.author.id !== myID) return;
             if(!args) return message.reply('اكتب الحالة اللي تريدها.');
         client.user.setActivity(args, {type:'LISTENING'});
-        message.channel.send('**Listening,Done!:notes:**').then(msg => {
+        message.channel.send('**Your Status** : `Listening`').then(msg => {
            msg.delete(500);
           message.delete(500);
         });
@@ -100,7 +100,7 @@ client.on('message', function(message) {
                         if(message.author.id !== myID) return;
             if(!args) return message.reply('اكتب الحالة اللي تريدها.');
         client.user.setActivity(args, {type:'WATCHING'});
-        message.channel.send('**Watching,Done!:notes:**').then(msg => {
+        message.channel.send('**Your Status** : `Watching`').then(msg => {
            msg.delete(500);
           message.delete(500);
         });
@@ -114,8 +114,6 @@ client.on('message', function(message) {
         });
     }
 });
-
-
 
 
 

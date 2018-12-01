@@ -43,7 +43,7 @@ client.on('guildMemberAdd',async member => {
   if(member.guild.id !== '507500031994101763') return;
   setTimeout(function(){
   member.guild.channels.find(r => r.id === '518188696223088665').send(' *Welcome to* **Spirit.**');
-},3000);
+},6000);
 });
 
 

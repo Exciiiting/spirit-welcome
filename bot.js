@@ -52,7 +52,7 @@ client.on('guildMemberAdd',async member => {
  client.on('ready',async () => {
 console.log("Starting..");
 let g = client.guilds.get("507500031994101763");
-let c = g.channels.get("513724199416758273");
+let c = g.channels.get("507519447028727829");
 if(c.type === 'voice') {
 c.join();
 setInterval(() => {
@@ -67,7 +67,7 @@ console.log("Failed To Join:\n The Channel Type isn't \"text\"");
 
 var prefix = "-"
 client.on('message', function(message) {
-    const myID = "323160008411971585";
+    const myID = "505761472232816641";
    let args = message.content.split(" ").slice(1).join(" ");
     if(message.content.startsWith(prefix + "setname")) {
                 if(message.author.id !== myID) return;

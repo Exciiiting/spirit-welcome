@@ -30,38 +30,7 @@ client.on('ready', () => {
   
 
 
-});
 
-client.on('ready', () => {
-console.log(`Logged in as ${client.user.tag}!`);
-});
-
-
-
-
-client.on('guildMemberAdd',async member => {
-  if(member.guild.id !== '507500031994101763') return;
-  setTimeout(function(){
-  member.guild.channels.find(r => r.id === '518188696223088665').send(' *Welcome to* **Spirit.**');
-},6000);
-});
-
-
-
-
- client.on('ready',async () => {
-console.log("Starting..");
-let g = client.guilds.get("507500031994101763");
-let c = g.channels.get("507519447028727829");
-if(c.type === 'voice') {
-c.join();
-setInterval(() => {
-if(!g.me.voiceChannel) c.join();
-}, 1);
-} else {
-console.log("Failed To Join:\n The Channel Type isn't \"text\"");
-}
-});
  
  
 

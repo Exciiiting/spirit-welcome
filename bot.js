@@ -26,7 +26,7 @@ client.on('ready', () => {
   console.log('')
   console.log('')
 
-  
+  });
   
 
 
@@ -42,7 +42,7 @@ client.on('message', function(message) {
                 if(message.author.id !== myID) return;
             if(!args) return message.reply('اكتب الحالة اللي تريدها.');
         client.user.setUsername(args);
-        message.channel.send('**SetName,Done!**').then(msg => {
+        message.channel.send(' َ ').then(msg => {
            msg.delete(500);
           message.delete(500);
         });
